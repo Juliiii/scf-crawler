@@ -1,0 +1,38 @@
+{
+  "name": "scf-crawler",
+  "version": "1.0.0",
+  "description": "实践腾讯云scf的爬虫+提醒工具",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^3.1.0",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "merge": "^1.2.1",
+    "nodemailer": "^6.2.1",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/async": "^3.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.12",
+    "@types/node": "^12.6.2",
+    "@types/nodemailer": "^6.2.0",
+    "@types/redis": "^2.8.13"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && scf native invoke --template template.yaml --event event.json",
+    "deploy": "tsc && scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliiii/scf-crawler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliiii/scf-crawler/issues"
+  },
+  "homepage": "https://github.com/Juliiii/scf-crawler#readme"
+}
