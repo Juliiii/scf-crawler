@@ -21,8 +21,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc && scf native invoke --template template.yaml --event event.json",
-    "deploy": "tsc && scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
+    "dev": "npm run build && scf native invoke --template template.yaml --event event.json",
+    "deploy": "npm run build && scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
   },
   "repository": {
     "type": "git",
