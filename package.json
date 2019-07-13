@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc && scf native invoke --template template.yaml --event event.json",
+    "dev": "tsc && scf local generate-event timer timeup | scf native invoke --template template.yaml",
     "deploy": "tsc && scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
   },
   "repository": {

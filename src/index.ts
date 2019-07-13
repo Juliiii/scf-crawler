@@ -1,7 +1,7 @@
 "use strict";
-import Task from "./src/task";
-import redis from "./src/redis";
-import config from "./src/config";
+import Task from "./task";
+import redis from "./redis";
+import config from "./config";
 
 exports.main_handler = async (event, context, callback) => {
   try {
