@@ -12,7 +12,7 @@ Resources:
               Enable: false
             Type: Timer
         Handler: dist/index.main_handler
-        LocalZipFile: /Users/zhulifeng/Desktop/scf-crawler/./.tcf_build/02957573-a51b-11e9-856e-acde48001122.zip
+        LocalZipFile: /Users/zhulifeng/Desktop/scf-crawler/./.tcf_build/7cf2bfa8-a63a-11e9-a51a-acde48001122.zip
         MemorySize: 128
         Runtime: Nodejs8.9
         Timeout: 30
