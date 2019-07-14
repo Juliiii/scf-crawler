@@ -1,16 +1,16 @@
 Resources:
-  default:
+  test:
     Type: TencentCloud::Serverless::Namespace
     scf-crawler:
       Type: TencentCloud::Serverless::Function
       Properties:
-        CodeUri: ./
+        CodeUri: ./dist
         Description: This is a template function
         # Environment:
         #   Variables:
         #     ENV_FIRST: env1
         #     ENV_SECOND: env2
-        Handler: dist/index.main_handler
+        Handler: index.main_handler
         MemorySize: 128
         Runtime: Nodejs8.9
         Timeout: 30

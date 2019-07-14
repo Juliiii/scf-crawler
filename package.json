@@ -22,7 +22,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "npm run build && scf local generate-event timer timeup | scf native invoke --template template.yaml",
-    "deploy": "npm run build && scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
+    "predeploy": "npm run build && node copy_node_modules.js",
+    "deploy": "scf package --template-file template.yaml && scf deploy -f --template-file  deploy.yaml"
   },
   "repository": {
     "type": "git",
