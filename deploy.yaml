@@ -3,15 +3,15 @@ Resources:
     Type: TencentCloud::Serverless::Namespace
     scf-crawler:
       Properties:
-        CodeUri: ./
+        CodeUri: ./dist
         Description: This is a template function
         Events:
           timer:
             Properties:
-              CronExpression: '*/5 * * * *'
+              CronExpression: "*/5 * * * *"
               Enable: false
             Type: Timer
-        Handler: dist/index.main_handler
+        Handler: index.main_handler
         LocalZipFile: /Users/zhulifeng/Desktop/scf-crawler/./.tcf_build/02957573-a51b-11e9-856e-acde48001122.zip
         MemorySize: 128
         Runtime: Nodejs8.9
