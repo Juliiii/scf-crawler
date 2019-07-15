@@ -1,5 +1,4 @@
 import async from "async";
-import { type } from "os";
 
 export const isNumber = number =>
   typeof number === "number" && !Number.isNaN(number);
