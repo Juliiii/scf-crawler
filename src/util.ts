@@ -1,7 +1,6 @@
 import async from "async";
-import { type } from "os";
 
-export const isNumber = number =>
+export const isNumber = (number: any) =>
   typeof number === "number" && !Number.isNaN(number);
 
 interface RetryOptions {
