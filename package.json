@@ -4,7 +4,7 @@
   "description": "实践腾讯云scf的爬虫+提醒工具",
   "main": "index.js",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
     "merge": "^1.2.1",
